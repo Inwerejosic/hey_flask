@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Hello{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="container">
+    {% if person %}
+    <h1>Yellow {{person}}</h1>
+    {% else %}
+    <h1>Hello, World</h1>
+    {% endif %} 
+</div>
+{% endblock %}
